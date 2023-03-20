@@ -1,6 +1,7 @@
 import { Link, routes } from '@redwoodjs/router'
 import { MetaTags } from '@redwoodjs/web'
 
+import UserBalanceCell from 'src/components/UserBalanceCell'
 const HomePage = () => {
   return (
     <>
@@ -16,7 +17,9 @@ const HomePage = () => {
           </ul>
         </nav>
       </header>
-      <main>Home</main>
+      <main>
+        <UserBalanceCell />
+      </main>
     </>
   )
 }

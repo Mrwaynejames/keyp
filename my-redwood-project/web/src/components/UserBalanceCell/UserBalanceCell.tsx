@@ -24,11 +24,16 @@ export const Failure = ({ error }) => (
 )
 
 export const Success = ({ userBalance }) => {
-  return (
-    <ul>
-      {userBalance.map((item) => {
-        return <li key={item.id}>{JSON.stringify(item)}</li>
-      })}
-    </ul>
-  )
+  return userBalance.map((userBalance) => (
+    <userBalance key={userBalance.id}>
+      <header>
+        <h2>
+          <u>{userBalance.user}</u>
+        </h2>
+      </header>
+      <p>
+        Remaining Balance: <strong>${userBalance.balance}</strong>
+      </p>
+    </userBalance>
+  ))
 }
