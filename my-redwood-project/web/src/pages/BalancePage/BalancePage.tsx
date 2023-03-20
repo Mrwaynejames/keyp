@@ -7,7 +7,9 @@ const BalancePage = () => {
       <MetaTags title="Balance" description="Balance page" />
 
       <header>
-        <h1>Balance Page</h1>
+        <h1>
+          <Link to={routes.home()}>Keyp Interview Project</Link>
+        </h1>
         <nav>
           <ul>
             <li>
