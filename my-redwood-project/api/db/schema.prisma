@@ -16,3 +16,9 @@ model Amount {
   user    String
   balance Decimal
 }
+
+model userBalance {
+  id   Int    @id @default(autoincrement())
+  name String
+  type String
+}

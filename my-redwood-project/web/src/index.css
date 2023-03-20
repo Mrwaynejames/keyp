@@ -2,3 +2,8 @@ h1 > a {
   text-decoration: none;
   color: black;
 }
+
+.inline {
+display: inline;
+padding: 10px;
+}
