@@ -1,11 +1,7 @@
-export const QUERY = gql `
-query userBalanceQuery {
-  userBalance{
+export const standard = {
+  userBalance: {
     id: 42,
+    user: 'jack',
+    balance: 123.12,
   },
-}`
-
-  export const Loading = () => <div>Loading...</div>
-
-
-
+}
